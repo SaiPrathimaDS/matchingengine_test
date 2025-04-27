@@ -16,7 +16,7 @@ This project automates UI testing for the MatchingEngine.com website using:
 
 1. Clone this repository:
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/SaiPrathimaDS/matchingengine_test.git 
     cd matching-engine-test
     ```
 2. Install dependencies:
@@ -43,7 +43,7 @@ This project automates UI testing for the MatchingEngine.com website using:
 
 2. Clone the Repository:
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/SaiPrathimaDS/matchingengine_test.git 
     cd matchingengine_test
     ```
 3. Build and Run Using Docker:
@@ -72,3 +72,9 @@ This project automates UI testing for the MatchingEngine.com website using:
 The project uses **TestNG** for reporting.  
 TestNG generates an HTML report after the test execution. You can find the report in the `build/reports/tests/test` directory.  
 The report includes detailed information about the test execution, including passed and failed tests, execution time, and more.
+
+
+## Results Snapshots
+![Test Results](screenshots/Screenshot_2025-04-27_1.png)
+![Test results](screenshots/Screenshot_2025-04-27_2.png)
+
