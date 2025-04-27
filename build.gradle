@@ -1,0 +1,31 @@
+plugins {
+    id "org.jetbrains.kotlin.jvm" version "1.9.0"
+}
+
+group = "com.matchingengine"
+version = "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.seleniumhq.selenium:selenium-java:4.20.0")
+    implementation("io.github.bonigarcia:webdrivermanager:5.7.0")
+
+    testImplementation("org.jetbrains.kotlin:kotlin-test")
+    testImplementation("org.testng:testng:7.9.0")
+
+    constraints {
+        implementation("org.bouncycastle:bcprov-jdk18on:1.78") {
+            because("Fixes CVE-2024-29857, CVE-2024-30172, CVE-2024-30171")
+        }
+    }
+}
+
+tasks.test {
+    useTestNG()
+    testLogging {
+        events("passed", "skipped", "failed")
+    }
+}

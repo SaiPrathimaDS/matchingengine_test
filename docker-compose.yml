@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  matching-engine-tests:
+    build: .
+    container_name: matching_engine_test_runner
+    environment:
+      - JAVA_OPTS=-Dwebdriver.chrome.driver=/usr/bin/chromedriver
+      - DOCKER_ENV=true
+      - GRADLE_OPTS=-Dorg.gradle.logging.level=debug # Enable debug level logging for Gradle
+    volumes:
+      - .:/app
+    network_mode: "host"
