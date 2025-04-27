@@ -37,6 +37,7 @@ This project automates UI testing for the MatchingEngine.com website using:
     Ensure the machine has network access to any external URLs used in the tests (e.g., https://www.matchingengine.com).
 
 ## How to Run Locally with Docker (Optional)
+**Note : Not fully tested solution.**
 
 1. Ensure Prerequisites Are Installed:  
    Install Docker and Docker Compose on the target machine.
