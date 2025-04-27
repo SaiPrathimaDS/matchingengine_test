@@ -69,9 +69,9 @@ This project automates UI testing for the MatchingEngine.com website using:
 
 ## Reporting
 
-The project uses **TestNG** for reporting.  
-TestNG generates an HTML report after the test execution. You can find the report in the `build/reports/tests/test` directory.  
-The report includes detailed information about the test execution, including passed and failed tests, execution time, and more.
+1. The project uses **TestNG** for reporting.  
+2. TestNG generates an HTML report after the test execution. You can find the report in the `build/reports/tests/test` directory.  
+
 
 
 ## Results Snapshots
